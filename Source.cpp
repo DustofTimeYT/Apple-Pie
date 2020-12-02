@@ -74,7 +74,7 @@ using std::string;
 using std::cout;
 using std::endl;
 
-void Create();
+
 void Display();
 
 
@@ -84,8 +84,10 @@ class Weapon
 public:
 	void setSuccessfulShots(int a=0)
 	{
-		if (a > successfulShots)
+		if (a > successfulShots) 
+		{
 			successfulShots = successfulShots + a;
+		}
 	}
 	void setName(string a)
 	{
@@ -93,11 +95,17 @@ public:
 	}
 	void setCaliber(double a = 0)
 	{
-		a = caliber;
+		if (a >= 0) 
+		{
+			a = caliber;
+		}
 	}
 	void setWeight(double a = 0)
 	{
-		a = weight;
+		if (a >= 0)
+		{
+			a = weight;
+		}
 	}
 	void setCountry(string a)
 	{
@@ -105,7 +113,10 @@ public:
 	}
 	void setYear(int a = 0)
 	{
-		a = year;
+		if (a >= 0)
+		{
+			a = year;
+		}
 	}
 	void setOwner(string a)
 	{
@@ -129,47 +140,18 @@ public:
 	{
 		std::cout << "\nsuccesfulShots " << successfulShots << "\n";
 	}
-	Weapon(string a, double b, double c, string d, int e, int f, string g)
+	Weapon(string name,double caliber, double weight, string country, int year, int successfulShots,string owner)
 	{
-		name = a; caliber = b; weight = c; country = d; year = e; successfulShots = f; owner = g;		
+		setName(name);
+		setCaliber(caliber);
+		setWeight(weight);
+		setCountry(country);
+		setYear(year);
+		setOwner(owner);
 	}
-	Weapon(string a, double b, double c, string g)
+	Weapon(string name, double caliber, string owner):Weapon(name, caliber, 0, "none", 0, 0, owner)
 	{
-		name = a; caliber = b; owner = g;
-		weight = c;
-		country = "none";
-		year = 0;
-		successfulShots = 0;
 	}
-	Weapon(string a, double b, double c, string d, string g)
-	{
-		name = a; caliber = b; owner = g;
-		weight = c;
-		country = d;
-		year = 0;
-		successfulShots = 0;
-	}
-	Weapon(string a, double b, double c, string d, int e, string g)
-	{
-		name = a; caliber = b; owner = g;
-		weight = c;
-		country = d;
-		year = e;
-		successfulShots = 0;
-	}
-	Weapon(string a, double b, string g)
-	{
-		name = a; caliber = b; owner = g;
-		weight = 1000;
-		country = "none";
-		year = 0;
-		successfulShots = 0;
-	}
-	
-	
-
-	
-	
 
 private:
 	string name;
@@ -183,6 +165,8 @@ private:
 
 int main()
 {
+	Weapon Two("AK47", 7.62, 1400, "Russia", 1940, 10000, "Nikita");
+	Two.getInform();
 	Display();
 	
 }
