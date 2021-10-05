@@ -1,0 +1,11 @@
+C:\Users\stud\Desktop\Tprogramming_2021-master\CourseApp\bin\Debug\netcoreapp2.1\CourseApp.deps.json
+C:\Users\stud\Desktop\Tprogramming_2021-master\CourseApp\bin\Debug\netcoreapp2.1\CourseApp.runtimeconfig.json
+C:\Users\stud\Desktop\Tprogramming_2021-master\CourseApp\bin\Debug\netcoreapp2.1\CourseApp.runtimeconfig.dev.json
+C:\Users\stud\Desktop\Tprogramming_2021-master\CourseApp\bin\Debug\netcoreapp2.1\CourseApp.dll
+C:\Users\stud\Desktop\Tprogramming_2021-master\CourseApp\bin\Debug\netcoreapp2.1\CourseApp.pdb
+C:\Users\stud\Desktop\Tprogramming_2021-master\CourseApp\obj\Debug\netcoreapp2.1\CourseApp.csprojAssemblyReference.cache
+C:\Users\stud\Desktop\Tprogramming_2021-master\CourseApp\obj\Debug\netcoreapp2.1\CourseApp.csproj.CoreCompileInputs.cache
+C:\Users\stud\Desktop\Tprogramming_2021-master\CourseApp\obj\Debug\netcoreapp2.1\CourseApp.AssemblyInfoInputs.cache
+C:\Users\stud\Desktop\Tprogramming_2021-master\CourseApp\obj\Debug\netcoreapp2.1\CourseApp.AssemblyInfo.cs
+C:\Users\stud\Desktop\Tprogramming_2021-master\CourseApp\obj\Debug\netcoreapp2.1\CourseApp.dll
+C:\Users\stud\Desktop\Tprogramming_2021-master\CourseApp\obj\Debug\netcoreapp2.1\CourseApp.pdb
